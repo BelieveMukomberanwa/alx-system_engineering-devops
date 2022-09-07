@@ -1,6 +1,2 @@
 #!/bin/bash
-<<<<<<< HEAD
-echo $PATH | tr ":" "\n" | wc -1
-=======
-echo $PATH | tr ":" "\n" | wc -1
->>>>>>> 8732189787218971
+echo $(('echo $PATH | grep -o ":/" | wc -l' +1))
